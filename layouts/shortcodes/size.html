@@ -1,0 +1,8 @@
+{{ $what := 100.0}}
+{{ $value := (.Get 1) }}
+{{ if eq (.Get 0) "width" }}
+{{ $what = float .Site.Params.reveal_hugo.width }}
+{{ else if eq (.Get 0) "height" }}
+{{ $what = float .Site.Params.reveal_hugo.height }}
+{{ end}}
+{{ mul ($what) (div $value 100.0) }}px

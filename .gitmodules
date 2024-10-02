@@ -1,0 +1,4 @@
+[submodule "themes/reveal-hugo"]
+	path = themes/reveal-hugo
+	url = git@github.com:cric96/reveal-hugo.git
+	branch = master

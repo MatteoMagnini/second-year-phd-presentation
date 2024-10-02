@@ -1,0 +1,5 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $tag := .Get "kind" }}
+{{ if eq $tag "ul"}} <ul class={{.Get "class" }}> {{ else if eq $tag "ol" }} <ol class={{.Get "class" }}> {{end}}
+{{ .Inner }}
+{{ if eq $tag "ul"}} </ul> {{ else if eq $tag "ol" }} </ol> {{end}}

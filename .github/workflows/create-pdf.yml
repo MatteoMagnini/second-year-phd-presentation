@@ -1,0 +1,36 @@
+name: Create PDF slides
+
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+  workflow_dispatch:
+env:
+  REPOSITORY_NAME: ${{ github.event.repository.name }}
+jobs:
+  deploy-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - name: Get GH pages URL
+        run: echo https://$GITHUB_REPOSITORY_OWNER.github.io/$REPOSITORY_NAME | xargs -I{} echo '::set-output name=URL::{}'
+        id: gh-pages-url
+      - uses: browser-actions/setup-chrome@latest
+      - name: Produce PDF
+        run: google-chrome-stable --headless --run-all-compositor-stages-before-draw --disable-gpu --virtual-time-budget=10000 --print-to-pdf=slides.pdf ${{steps.gh-pages-url.outputs.URL}}\?print-pdf\&pdfSeparateFragments\=false\#/  
+      - name: Tag From date
+        run: echo $(date +'%Y_%m_%d-%H_%M') | xargs -I{}  echo '::set-output name=TAG::{}'  
+        id: tag-from-date
+      - uses: xresloader/upload-to-github-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file: "*.pdf"
+          draft: false
+          tag_name: ${{ steps.tag-from-date.outputs.TAG}}

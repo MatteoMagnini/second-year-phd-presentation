@@ -1,0 +1,20 @@
+{
+  "name": "hugo-slide-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A template for hugo slides generation with reveal.js",
+  "main": "postprocessing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cric96/Template-Hugo-Reveal-Slides.git"
+  },
+  "author": "cric96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cric96/Template-Hugo-Reveal-Slides/issues"
+  },
+  "homepage": "https://github.com/cric96/Template-Hugo-Reveal-Slides#readme"
+}

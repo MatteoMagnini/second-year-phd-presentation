@@ -1,0 +1,5 @@
+
+{{ $padding := .Get "padding" | default "0em" }}
+<div style="text-align: left; padding-left: {{ $padding }};">
+    {{ .Inner }}
+</div>

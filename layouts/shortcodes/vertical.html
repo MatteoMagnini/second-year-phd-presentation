@@ -1,0 +1,5 @@
+{{ if eq "start" (.Get 0) }}
+<section data-shortcode-section {{ with .Get 1 }}data-transition='{{ . }}'{{ end }}>
+{{ else if eq "end" (.Get 0)}}
+</section>
+{{ end }}

@@ -1,0 +1,52 @@
+languageCode = "en-us"
+title = "Addressing Collective Computations Efficiency"
+disableKinds = ["sitemap", "RSS"]
+theme = "reveal-hugo"
+publishDir = "build"
+canonifyURLs = true
+
+# uncomment for browsing at file:///
+# relativeURLs = true
+# uglyURLs = true
+
+[author]
+name = "Gianluca Aguzzi"
+
+# currently only the unsafe mode for goldmark is supported
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser.attribute]
+block = true
+
+
+# choose between Hugo compile-time or Highlight.js
+# syntax highlighting for code inside of code fences
+[markup.highlight]
+codeFences = true  # use highlight.js 
+style = "solarized-dark"  # set a style for hugo highlighting
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
+[params.reveal_hugo]
+history = true
+theme = "serif"
+highlight_theme = "solarized-dark"
+slide_number = true
+transition = "slide"
+transition_speed = "normal"
+custom_theme = "custom-theme.scss"
+custom_theme_compile = true
+width = 1440
+height = 900
+
+[params.reveal_hugo.custom_theme_options]
+targetPath = "css/custom-theme.css"
+enableSourceMap = true
+
+[[params.reveal_hugo.mermaid]]
+startOnLoad = false
+theme = "default"

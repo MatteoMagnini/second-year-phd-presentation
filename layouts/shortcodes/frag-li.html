@@ -1,0 +1,4 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<li class='fragment {{ .Get 0 }}' {{ with .Get 1 }}data-fragment-index='{{ . }}'{{ end }} style="color: #888;">
+{{ .Inner }}
+</li>

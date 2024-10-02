@@ -1,0 +1,17 @@
+{{ $heightContent := "" }}
+{{ $widthContent := "" }}
+
+{{ $heightPage := float .Site.Params.reveal_hugo.height }}
+{{ $widthPage := float .Site.Params.reveal_hugo.width }}
+{{ if .Get "width" }}
+{{ $widthImage := mul ($widthPage) (div (float (.Get "width")) 100.0) }}
+{{ $widthContent = printf "%s%spx" "width:" (string $widthImage)}}
+{{ end }}
+{{ if .Get "height" }}
+{{ $heightImage := mul ($heightPage) (div (float (.Get "height")) 100.0)}}
+{{ $heightContent = printf "%s%spx" "height:" (string $heightImage) }}
+{{ end }}
+<figure class="{{ .Get "class" }}">
+    <img src="{{ .Get "src" }}" style="{{$heightContent}}; {{$widthContent}}; max-width: {{ with .Get "max-w" }}{{.}}{{ else }}95{{ end }}vw;max-height: {{ with .Get "max-h" }}{{.}}{{ else }}80{{end}}vh;object-fit: contain;" >
+    <figcaption> {{ .Get "caption" }} </figcaption>
+  </figure>
