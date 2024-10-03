@@ -35,13 +35,13 @@
 <span class="fragment col">
   <h4 id="symbolic-knowledge">Symbolic Knowledge</h4>
 <p>$$
-\text{Class} = \text{Setosa} \iff (\text{Petal Length} \leq 2.45)
-$$
-$$
-\text{Class} = \text{Versicolor} \iff (\text{Petal Length} &gt; 2.45) \land (\text{Petal Width} \leq 1.75)
-$$
-$$
-\text{Class} = \text{Virginica} \iff (\text{Petal Length} &gt; 2.45) \land (\text{Petal Width} &gt; 1.75)
+\forall x , (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
+$$</p>
+<p>$$
+\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
+$$</p>
+<p>$$
+\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) &gt; 1.75) \implies \text{Class}(x, \text{Virginica})
 $$</p>
 </span>
 <span class="fragment col">
