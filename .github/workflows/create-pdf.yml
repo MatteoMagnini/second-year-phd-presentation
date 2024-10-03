@@ -27,7 +27,7 @@ jobs:
       - name: Tag From date
         run: echo $(date +'%Y_%m_%d-%H_%M') | xargs -I{}  echo '::set-output name=TAG::{}'  
         id: tag-from-date
-      - uses: xresloader/upload-to-github-release@v1
+      - uses: xresloader/upload-to-github-release@v1.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
