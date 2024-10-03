@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js"></script>
+<body>
+  <div id="background"> </div>
+</body>
+  <script>
+    VANTA.BIRDS({
+      el: "#background",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      color: 0x268bd2,
+      showLines: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xfdf6e3,
+      color1: 0x859900,
+      colorMode: "lerp",
+      quantity: 5.00,
+      wingSpan: 40.00,
+      color2: 0xcb4b16f,
+      separation: 45.00,
+      backgroundAlpha: 0.93
+    })
+  </script>
+
+  <style>
+
+#background {
+  height:100vh;
+}
+* {
+  margin: 0;
+}
+  </style>
+</html>
