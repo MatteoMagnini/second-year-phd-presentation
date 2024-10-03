@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta name="generator" content="Hugo 0.135.0">
+    <meta charset="utf-8">
+<title>Second Year PhD presentation</title>
+<meta name="description" content="Symbolic Knowledge Injection &amp; Extraction for Autonomous Learning">
+<meta name="author" content="Gianluca Aguzzi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" href="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/dist/reset.css">
+<link rel="stylesheet" href="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/dist/reveal.css">
+  <link rel="stylesheet" href="https://MatteoMagnini.github.io/second-year-phd-presentation/css/custom-theme.min.2abad5fe437215b2f3f11f57457d5ca4fe1939107bc4d1ecec59f2e1c3f5ad23.css" id="theme"><link rel="stylesheet" href="https://MatteoMagnini.github.io/second-year-phd-presentation/highlight-js/solarized-dark.min.css">
+<link rel="stylesheet" href="https://gitcdn.link/repo/DanySK/css-blur-animation/master/blur.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu Mono" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+    
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section data-noprocess="" data-shortcode-slide="" data-background-iframe="https://MatteoMagnini.github.io/second-year-phd-presentation/boids.html" data-preload="true" data-transition="zoom">
+<h1 id="symbolic-knowledge-injection--extraction-for-autonomous-learning">Symbolic Knowledge Injection &amp; Extraction for Autonomous Learning</h1>
+<p><strong>Second Year PhD report</strong></p>
+<p>🎤 <em>Matteo Magnini</em>, supervisor <strong>Andrea Omicini</strong></p>
+<p>📧 <a href="mailto:gianluca.aguzzi@unibo.it">matteo.magnini@unibo.it</a></p>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h2 class="highlight" id="context">Context</h2>
+<h3 class="accent" id="symbolic-knowledge-extraction-ske">Symbolic Knowledge Extraction (<em>SKE</em>)</h3>
+<h3 class="accent" id="symbolic-knowledge-injection-ski">Symbolic Knowledge Injection (<em>SKI</em>)</h3>
+<div class="container">
+<span class="fragment col">
+  <h4 id="symbolic-knowledge">Symbolic Knowledge</h4>
+<p>$$
+\text{Class} = \text{Setosa} \iff (\text{Petal Length} \leq 2.45)
+$$
+$$
+\text{Class} = \text{Versicolor} \iff (\text{Petal Length} &gt; 2.45) \land (\text{Petal Width} \leq 1.75)
+$$
+$$
+\text{Class} = \text{Virginica} \iff (\text{Petal Length} &gt; 2.45) \land (\text{Petal Width} &gt; 1.75)
+$$</p>
+</span>
+<span class="fragment col">
+  <h4 id="sub-symbolic-models">Sub-symbolic models</h4>
+<figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/nn-brain-shape.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+<span class="fragment col">
+  <h4 id="intelligent-systems">Intelligent Systems</h4>
+<figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/intelligent-hybrid-systems.pdf" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+</span>
+</div>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-hugo/object-assign.js"></script>
+
+<a href="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/dist/print/" id="print-location" style="display: none;"></a>
+
+<script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"custom_theme_options":{"enablesourcemap":true,"targetpath":"css/custom-theme.css"},"height":900,"highlight_theme":"solarized-dark","history":true,"mermaid":[{"startOnLoad":false,"theme":"default"}],"slide_number":true,"theme":"serif","transition":"slide","transition_speed":"normal","width":1440}</script>
+<script type="application/json" id="reveal-hugo-page-params">null</script>
+
+<script src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/dist/reveal.js"></script>
+
+
+  
+  
+  <script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/plugin/zoom/zoom.js"></script>
+  
+  <script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/plugin/notes/notes.js"></script>
+  
+  
+  <script type="text/javascript" src="https://MatteoMagnini.github.io/second-year-phd-presentation/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+
+  var revealHugoPlugins = { 
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
+   };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams),
+    camelize(revealHugoPlugins));
+  Reveal.initialize(options);
+</script>
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+    
+  
+
+</body></html>
