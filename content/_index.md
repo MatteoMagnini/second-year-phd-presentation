@@ -25,7 +25,7 @@ aliases = [
 ## Context {.highlight}
 ### Ingredients {.accent}
 {{% row %}}
-{{% fragment class="col" %}} 
+{{% fragment class="col" style="width: 30%;"%}} 
 #### Symbolic Knowledge
 $$
 \forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
@@ -45,7 +45,7 @@ $$
 {{% /fragment %}}
 {{% fragment class="col" %}} 
 #### Intelligent Systems
-{{< image height="30" src="/intelligent-hybrid-systems.pdf" >}} 
+{{< image height="30" src="/intelligent-hybrid-systems.svg" >}} 
 {{% /fragment %}}
 {{% /row %}}
 
@@ -57,14 +57,14 @@ $$
 {{% row %}}
 {{% fragment class="col" %}}
 #### Constraining
-{{< image height="30" src="/workflow-constraining.pdf" >}}
+{{< image height="30" src="/workflow-constraining.svg" >}}
 {{% /fragment %}}
 {{% fragment class="col" %}}
 #### Embedding
-{{< image height="30" src="/workflow-embedding.pdf" >}}
+{{< image height="30" src="/workflow-embedding.svg" >}}
 {{% /fragment %}}
 {{% fragment class="col" %}}
 #### Structuring
-{{< image height="30" src="/workflow-structuring.pdf" >}}
+{{< image height="30" src="/workflow-structuring.svg" >}}
 {{% /fragment %}}
 {{% /row %}}
