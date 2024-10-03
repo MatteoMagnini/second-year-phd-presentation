@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Addressing Collective Computations Efficiency"
+title = "Second Year PhD Presentation"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
@@ -10,7 +10,7 @@ canonifyURLs = true
 # uglyURLs = true
 
 [author]
-name = "Gianluca Aguzzi"
+name = "Matteo Magnini"
 
 # currently only the unsafe mode for goldmark is supported
 [markup.goldmark.renderer]
@@ -23,7 +23,7 @@ block = true
 # choose between Hugo compile-time or Highlight.js
 # syntax highlighting for code inside of code fences
 [markup.highlight]
-codeFences = true  # use highlight.js 
+codeFences = true  # use highlight.js
 style = "solarized-dark"  # set a style for hugo highlighting
 
 [outputFormats.Reveal]

@@ -1,7 +1,7 @@
  
 +++
 
-title = "Second Year PhD presentation"
+title = "Second Year PhD Presentation"
 description = "Symbolic Knowledge Injection & Extraction for Autonomous Learning"
 outputs = ["Reveal"]
 aliases = [
