@@ -1,5 +1,6 @@
+.idea
 public/
 build/
 _gen/
-*.pdf
+!*.pdf
 *.hprof
