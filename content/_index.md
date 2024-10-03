@@ -23,8 +23,7 @@ aliases = [
 
 {{% slide auto-animate=true %}}
 ## Context {.highlight}
-### Symbolic Knowledge Extraction (*SKE*) {.accent}
-### Symbolic Knowledge Injection (*SKI*) {.accent}
+### Ingredients {.accent}
 {{% row %}}
 {{% fragment class="col" %}} 
 #### Symbolic Knowledge
@@ -50,3 +49,22 @@ $$
 {{% /fragment %}}
 {{% /row %}}
 
+---
+
+{{% slide auto-animate=true %}}
+
+### Symbolic Knowledge Injection (SKI) {.highlight}
+{{% row %}}
+{{% fragment class="col" %}}
+#### Constraining
+{{< image height="30" src="/workflow-constraining.pdf" >}}
+{{% /fragment %}}
+{{% fragment class="col" %}}
+#### Embedding
+{{< image height="30" src="/workflow-embedding.pdf" >}}
+{{% /fragment %}}
+{{% fragment class="col" %}}
+#### Structuring
+{{< image height="30" src="/workflow-structuring.pdf" >}}
+{{% /fragment %}}
+{{% /row %}}
