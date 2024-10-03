@@ -29,15 +29,16 @@ aliases = [
 {{% fragment class="col" %}} 
 #### Symbolic Knowledge
 $$
-\text{Class} = \text{Setosa} \iff (\text{Petal Length} \leq 2.45)
-$$
-$$
-\text{Class} = \text{Versicolor} \iff (\text{Petal Length} > 2.45) \land (\text{Petal Width} \leq 1.75)
-$$
-$$
-\text{Class} = \text{Virginica} \iff (\text{Petal Length} > 2.45) \land (\text{Petal Width} > 1.75)
+\forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
 $$
 
+$$
+\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
+$$
+
+$$
+\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) > 1.75) \implies \text{Class}(x, \text{Virginica})
+$$
 {{% /fragment %}}
 {{% fragment class="col" %}} 
 #### Sub-symbolic models
