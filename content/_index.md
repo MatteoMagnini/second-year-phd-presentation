@@ -76,7 +76,7 @@ Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symb
 
 #### Constraining
 {{< image height="30" src="/workflow-constraining.png" >}}
-The training process is *guided* by the loss function that incorporates the knowledge, i.e., it **penalizes** the model when it makes predictions that **violates** the knowledge.
+The training process is *guided* by the loss function that incorporates the knowledge **penalising** the model when it makes predictions that **violates** it.
 
 {{% /fragment %}}
 
@@ -93,7 +93,7 @@ The embeddings are provided as **additional input** to the neural network.
 {{% row %}}
 {{% fragment class="col" %}}
 
-{{< image width="45" src="/workflow-structuring.png" >}}
+{{< image height="30" src="/workflow-structuring.png" >}}
 
 {{% /fragment %}}
 {{% fragment class="col" %}}
