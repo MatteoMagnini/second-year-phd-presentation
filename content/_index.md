@@ -115,7 +115,7 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 {{% fragment class="col" %}}
 
 #### Data
-{{< image height="30" src="/iris-flower.svg" >}}
+{{< image height="30" src="/iris-flower.png" >}}
 The well known Iris dataset is used to train a neural network.
 
 {{% /fragment %}}
@@ -125,7 +125,7 @@ The well known Iris dataset is used to train a neural network.
 #### Sub-symbolic model
 {{< image height="30" src="/nn-iris.png" >}}
 A neural network is trained to classify the Iris dataset.
-A human **can't understand** how the network makes decisions by inspecting the weights.
+A human **can't understand** how the network makes decisions by inspecting it.
 
 {{% /fragment %}}
 
