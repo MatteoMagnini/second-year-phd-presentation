@@ -33,7 +33,6 @@
 <div class="container">
 <span class="fragment col">
   <h4 id="symbolic-knowledge">Symbolic Knowledge</h4>
-<p>All men are mortal. Socrates is a man. Therefore, Socrates is mortal.</p>
 <p>$$
 \forall x , \text{Man}(x) \implies \text{Mortal}(x)
 $$</p>
@@ -45,20 +44,23 @@ $$</p>
 <p>$$
 \text{Mortal}(\text{Socrates})
 $$</p>
+<p>All those knowledge representations where there are symbols carrying <strong>meaning</strong>: logic rules, traffic signs, sentences in natural language.</p>
 </span>
 <span class="fragment col">
   <h4 id="sub-symbolic-models">Sub-symbolic models</h4>
 <figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/nn-brain-shape.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/nn-brain-shape.svg" style="height:297px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
+<p>Models that are based on <strong>numerical values</strong> and do not have a symbolic meaning like neural networks.</p>
 </span>
 <span class="fragment col">
   <h4 id="intelligent-systems">Intelligent Systems</h4>
 <figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/intelligent-hybrid-systems.svg" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/intelligent-hybrid-systems.svg" style="height:297px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
+<p>Intelligent systems incorporate knowledge, possibly <strong>both symbolic and sub-symbolic</strong>, to make decisions.</p>
 </span>
 </div>
 </section>
@@ -68,7 +70,7 @@ $$</p>
 <span class="fragment col">
   <h4 id="constraining">Constraining</h4>
 <figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-constraining.svg" style="; width:432px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-constraining.png" style="; width:648px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 <p>The training process is <em>guided</em> by a loss function that incorporates symbolic knowledge.
@@ -77,19 +79,23 @@ Intuitively, the loss function <strong>penalizes</strong> the model when it make
 <span class="fragment col">
   <h4 id="embedding">Embedding</h4>
 <figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-embedding.svg" style="; width:432px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-embedding.png" style="; width:648px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
 <p>The symbolic knowledge is <em>embedded</em> into a sub-symbolic representation.
 The embeddings are provided as <strong>additional input</strong> to the neural network.</p>
 </span>
+</div>
+<div class="container">
+<h4 id="structuring">Structuring</h4>
 <span class="fragment col">
-  <h4 id="structuring">Structuring</h4>
-<figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-structuring.svg" style="; width:432px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+  <figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-structuring.png" style="; width:648px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-<p>The network <em>architecture is modified</em> to include symbolic knowledge.
+</span>
+<span class="fragment col">
+  <p>The network <em>architecture is modified</em> to include symbolic knowledge.
 Some neurons and connection are designed to <strong>mimic</strong> the symbolic knowledge.</p>
 </span>
 </div>
