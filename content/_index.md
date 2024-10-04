@@ -25,10 +25,8 @@ aliases = [
 ## Context {.highlight}
 ### Ingredients {.accent}
 {{% row %}}
-{{% fragment class="col" style="flex: 0 0 30%;"%}} 
+{{% fragment class="col" style="flex: 0 0 33%;"%}} 
 #### Symbolic Knowledge
-All men are mortal. Socrates is a man. Therefore, Socrates is mortal.
-
 $$
 \forall x \, \text{Man}(x) \implies \text{Mortal}(x)
 $$
@@ -45,15 +43,26 @@ $$
 \text{Mortal}(\text{Socrates})
 $$
 
+All those knowledge representations where there are symbols carrying **meaning**: logic rules, traffic signs, sentences in natural language.
+
 {{% /fragment %}}
+
 {{% fragment class="col" %}} 
 #### Sub-symbolic models
-{{< image height="30" src="/nn-brain-shape.svg" >}} 
+{{< image height="33" src="/nn-brain-shape.svg" >}}
+
+Models that are based on **numerical values** and do not have a symbolic meaning like neural networks.
+
 {{% /fragment %}}
+
 {{% fragment class="col" %}} 
 #### Intelligent Systems
-{{< image height="30" src="/intelligent-hybrid-systems.svg" >}} 
+{{< image height="33" src="/intelligent-hybrid-systems.svg" >}}
+
+Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symbolic**, to make decisions.
+
 {{% /fragment %}}
+
 {{% /row %}}
 
 ---
@@ -67,7 +76,7 @@ $$
 {{% fragment class="col" %}}
 
 #### Constraining
-{{< image width="30" src="/workflow-constraining.svg" >}}
+{{< image width="45" src="/workflow-constraining.png" >}}
 
 The training process is *guided* by a loss function that incorporates symbolic knowledge.
 Intuitively, the loss function **penalizes** the model when it makes predictions that **violates** the symbolic knowledge.
@@ -77,17 +86,21 @@ Intuitively, the loss function **penalizes** the model when it makes predictions
 {{% fragment class="col" %}}
 
 #### Embedding
-{{< image width="30" src="/workflow-embedding.svg" >}}
+{{< image width="45" src="/workflow-embedding.png" >}}
 
 The symbolic knowledge is *embedded* into a sub-symbolic representation.
 The embeddings are provided as **additional input** to the neural network.
 
 {{% /fragment %}}
+{{% /row %}}
 
-{{% fragment class="col" %}}
-
+{{% row %}}
 #### Structuring
-{{< image width="30" src="/workflow-structuring.svg" >}}
+{{% fragment class="col" %}}
+{{< image width="45" src="/workflow-structuring.png" >}}
+
+{{% /fragment %}}
+{{% fragment class="col" %}}
 
 The network *architecture is modified* to include symbolic knowledge.
 Some neurons and connection are designed to **mimic** the symbolic knowledge.
