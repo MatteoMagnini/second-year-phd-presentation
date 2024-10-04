@@ -33,13 +33,17 @@
 <div class="container">
 <span class="fragment col">
   <h4 id="symbolic-knowledge">Symbolic Knowledge</h4>
-<p>\small
-$$
-\begin{aligned}
-&amp;\forall x , (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa}) \
-&amp;\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor}) \
-&amp;\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) &gt; 1.75) \implies \text{Class}(x, \text{Virginica})
-\end{aligned}
+<p>All men are mortal. Socrates is a man. Therefore, Socrates is mortal.</p>
+<p>$$
+\forall x , \text{Man}(x) \implies \text{Mortal}(x)
+$$</p>
+<p>$$
+\text{Man}(\text{Socrates})
+$$</p>
+<!-- add down arrow -->
+<p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+<p>$$
+\text{Mortal}(\text{Socrates})
 $$</p>
 </span>
 <span class="fragment col">
@@ -88,7 +92,35 @@ The embeddings are provided as <strong>additional input</strong> to the neural n
 <p>The network <em>architecture is modified</em> to include symbolic knowledge.
 Some neurons and connection are designed to <strong>mimic</strong> the symbolic knowledge.</p>
 </span>
-</div></section>
+</div>
+</section>
+<section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
+<h3 class="highlight" id="symbolic-knowledge-extraction-ske">Symbolic Knowledge Extraction (SKE)</h3>
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/iris-flower.png" style="; width:720px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+
+<p>$$
+\forall x , (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
+$$</p>
+<p>$$
+\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
+$$</p>
+<p>$$
+\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) &gt; 1.75) \implies \text{Class}(x, \text{Virginica})
+$$</p>
+</section>
 
   
 
