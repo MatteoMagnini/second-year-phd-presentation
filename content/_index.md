@@ -23,10 +23,11 @@ aliases = [
 
 {{% slide auto-animate=true %}}
 ## Context {.highlight}
-### Ingredients {.accent}
+### Fundamentals {.accent}
 {{% row %}}
 {{% fragment class="col" style="flex: 0 0 33%;"%}} 
 #### Symbolic Knowledge
+<br/>
 $$
 \forall x \, \text{Man}(x) \implies \text{Mortal}(x)
 $$
@@ -35,21 +36,19 @@ $$
 \text{Man}(\text{Socrates})
 $$
 
-<!-- add down arrow -->
-
 <i class="fa fa-arrow-down" aria-hidden="true"></i>
 
 $$
 \text{Mortal}(\text{Socrates})
 $$
 
-All those knowledge representations where there are symbols carrying **meaning**: logic rules, traffic signs, sentences in natural language.
+All those knowledge representations where there are symbols carrying **meaning**: logic rules, traffic signs, sentences in natural language, etc.
 
 {{% /fragment %}}
 
 {{% fragment class="col" %}} 
 #### Sub-symbolic models
-{{< image height="33" src="/nn-brain-shape.svg" >}}
+{{< image height="33" src="/nn-brain-shape.png" >}}
 
 Models that are based on **numerical values** and do not have a symbolic meaning like neural networks.
 
@@ -76,8 +75,7 @@ Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symb
 {{% fragment class="col" %}}
 
 #### Constraining
-{{< image width="45" src="/workflow-constraining.png" >}}
-
+{{< image height="30" src="/workflow-constraining.png" >}}
 The training process is *guided* by a loss function that incorporates symbolic knowledge.
 Intuitively, the loss function **penalizes** the model when it makes predictions that **violates** the symbolic knowledge.
 
@@ -86,8 +84,7 @@ Intuitively, the loss function **penalizes** the model when it makes predictions
 {{% fragment class="col" %}}
 
 #### Embedding
-{{< image width="45" src="/workflow-embedding.png" >}}
-
+{{< image height="30" src="/workflow-embedding.png" >}}
 The symbolic knowledge is *embedded* into a sub-symbolic representation.
 The embeddings are provided as **additional input** to the neural network.
 
@@ -95,13 +92,14 @@ The embeddings are provided as **additional input** to the neural network.
 {{% /row %}}
 
 {{% row %}}
-#### Structuring
 {{% fragment class="col" %}}
+
 {{< image width="45" src="/workflow-structuring.png" >}}
 
 {{% /fragment %}}
 {{% fragment class="col" %}}
 
+#### Structuring
 The network *architecture is modified* to include symbolic knowledge.
 Some neurons and connection are designed to **mimic** the symbolic knowledge.
 
@@ -114,7 +112,7 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 
 ### Symbolic Knowledge Extraction (SKE) {.highlight}
 
-{{< image width="50" src="/iris-flower.png" >}}
+{{< image height="30" src="/iris-flower.png" >}}
 
 $$
 \forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
