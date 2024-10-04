@@ -73,8 +73,7 @@ $$</p>
     <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-constraining.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-<p>The training process is <em>guided</em> by a loss function that incorporates symbolic knowledge.
-Intuitively, the loss function <strong>penalizes</strong> the model when it makes predictions that <strong>violates</strong> the symbolic knowledge.</p>
+<p>The training process is <em>guided</em> by a loss function that incorporates symbolic knowledge, i.e., it <strong>penalizes</strong> the model when it makes predictions that <strong>violates</strong> the knowledge.</p>
 </span>
 <span class="fragment col">
   <h4 id="embedding">Embedding</h4>
@@ -88,44 +87,47 @@ The embeddings are provided as <strong>additional input</strong> to the neural n
 </div>
 <div class="container">
 <span class="fragment col">
-  <figure class="">
+  <section data-noprocess="" data-shortcode-slide="" data-auto-animate="false">
+<figure class="">
     <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/workflow-structuring.png" style="; width:648px; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-</span>
+
 <span class="fragment col">
   <h4 id="structuring">Structuring</h4>
 <p>The network <em>architecture is modified</em> to include symbolic knowledge.
 Some neurons and connection are designed to <strong>mimic</strong> the symbolic knowledge.</p>
 </span>
-</div>
+</section></span></div>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h3 class="highlight" id="symbolic-knowledge-extraction-ske">Symbolic Knowledge Extraction (SKE)</h3>
-
-
-
-
-
-
-
-
-
-
+<div class="container">
+<span class="fragment col">
+  <h4 id="data">Data</h4>
 <figure class="">
-    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/iris-flower.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/iris-dataset.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
     <figcaption>  </figcaption>
   </figure>
-
-<p>$$
-\forall x , (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
-$$</p>
-<p>$$
-\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
-$$</p>
-<p>$$
-\forall x , (\text{PetalLength}(x) &gt; 2.45 \land \text{PetalWidth}(x) &gt; 1.75) \implies \text{Class}(x, \text{Virginica})
-$$</p>
+<p>The well known Iris dataset is used to train a neural network.</p>
+</span>
+<span class="fragment col">
+  <h4 id="sub-symbolic-model">Sub-symbolic model</h4>
+<figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/nn-iris.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+<p>A neural network is trained to classify the Iris dataset.</p>
+</span>
+<span class="fragment col">
+  <h4 id="symbolic-knowledge">Symbolic knowledge</h4>
+<figure class="">
+    <img src="https://MatteoMagnini.github.io/second-year-phd-presentation/decision-tree-iris.png" style="height:270px; ; max-width: 95vw;max-height: 80vh;object-fit: contain;">
+    <figcaption>  </figcaption>
+  </figure>
+<p>A decision tree is generated from the neural network to extract symbolic knowledge.</p>
+</span>
+</div>
 </section>
 
   
