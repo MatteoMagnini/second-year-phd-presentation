@@ -25,7 +25,7 @@ aliases = [
 ## Context {.highlight}
 ### Ingredients {.accent}
 {{% row %}}
-{{% fragment class="col" style="width: 30%;"%}} 
+{{% fragment class="col" style="flex: 0 0 30%;"%}} 
 #### Symbolic Knowledge
 $$
 \forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
@@ -54,17 +54,35 @@ $$
 {{% slide auto-animate=true %}}
 
 ### Symbolic Knowledge Injection (SKI) {.highlight}
+
 {{% row %}}
 {{% fragment class="col" %}}
 #### Constraining
-{{< image height="30" src="/workflow-constraining.svg" >}}
+{{< image width="30%" src="/workflow-constraining.svg" >}}
+
+The training process is guided by a loss function that incorporates symbolic knowledge.
+
+Intuitively, the loss function penalizes the model when it makes predictions that contradict the symbolic knowledge.
+
 {{% /fragment %}}
 {{% fragment class="col" %}}
 #### Embedding
-{{< image height="30" src="/workflow-embedding.svg" >}}
+{{< image width="30%" src="/workflow-embedding.svg" >}}
+
+The symbolic knowledge is embedded into a sub-symbolic representation.
+
+The embeddings are provided as additional input to the neural network.
+
+{{% /fragment %}}
+{{% /row %}}
 {{% /fragment %}}
 {{% fragment class="col" %}}
 #### Structuring
-{{< image height="30" src="/workflow-structuring.svg" >}}
+{{< image width="30%" src="/workflow-structuring.svg" >}}
+
+The network architecture is modified to include symbolic knowledge.
+
+Some neurons and connection are designed to mimic the symbolic knowledge.
+
 {{% /fragment %}}
 {{% /row %}}
