@@ -76,8 +76,7 @@ Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symb
 
 #### Constraining
 {{< image height="30" src="/workflow-constraining.png" >}}
-The training process is *guided* by a loss function that incorporates symbolic knowledge.
-Intuitively, the loss function **penalizes** the model when it makes predictions that **violates** the symbolic knowledge.
+The training process is *guided* by the loss function that incorporates the knowledge, i.e., it **penalizes** the model when it makes predictions that **violates** the knowledge.
 
 {{% /fragment %}}
 
@@ -98,7 +97,6 @@ The embeddings are provided as **additional input** to the neural network.
 
 {{% /fragment %}}
 {{% fragment class="col" %}}
-
 #### Structuring
 The network *architecture is modified* to include symbolic knowledge.
 Some neurons and connection are designed to **mimic** the symbolic knowledge.
@@ -112,16 +110,28 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 
 ### Symbolic Knowledge Extraction (SKE) {.highlight}
 
-{{< image height="30" src="/iris-flower.png" >}}
+{{% row %}}
 
-$$
-\forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
-$$
+{{% fragment class="col" %}}
 
-$$
-\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
-$$
+#### Data
+{{< image height="30" src="/iris-dataset.svg" >}}
+The well known Iris dataset is used to train a neural network.
 
-$$
-\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) > 1.75) \implies \text{Class}(x, \text{Virginica})
-$$
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+
+#### Sub-symbolic model
+{{< image height="30" src="/nn-iris.png" >}}
+A neural network is trained to classify the Iris dataset.
+
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+#### Symbolic knowledge
+{{< image height="30" src="/decision-tree-iris.png" >}}
+A decision tree is generated from the neural network to extract symbolic knowledge.
+
+{{% /fragment %}}
+{{% /row %}}
