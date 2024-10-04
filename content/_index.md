@@ -56,7 +56,9 @@ $$
 ### Symbolic Knowledge Injection (SKI) {.highlight}
 
 {{% row %}}
+
 {{% fragment class="col" %}}
+
 #### Constraining
 {{< image width="30%" src="/workflow-constraining.svg" >}}
 
@@ -65,7 +67,9 @@ The training process is guided by a loss function that incorporates symbolic kno
 Intuitively, the loss function penalizes the model when it makes predictions that contradict the symbolic knowledge.
 
 {{% /fragment %}}
+
 {{% fragment class="col" %}}
+
 #### Embedding
 {{< image width="30%" src="/workflow-embedding.svg" >}}
 
@@ -74,9 +78,9 @@ The symbolic knowledge is embedded into a sub-symbolic representation.
 The embeddings are provided as additional input to the neural network.
 
 {{% /fragment %}}
-{{% /row %}}
-{{% /fragment %}}
+
 {{% fragment class="col" %}}
+
 #### Structuring
 {{< image width="30%" src="/workflow-structuring.svg" >}}
 
