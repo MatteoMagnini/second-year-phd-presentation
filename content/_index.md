@@ -27,14 +27,24 @@ aliases = [
 {{% row %}}
 {{% fragment class="col" style="flex: 0 0 30%;"%}} 
 #### Symbolic Knowledge
-\small
+All men are mortal. Socrates is a man. Therefore, Socrates is mortal.
+
 $$
-\begin{aligned}
-&\forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa}) \\
-&\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor}) \\
-&\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) > 1.75) \implies \text{Class}(x, \text{Virginica})
-\end{aligned}
+\forall x \, \text{Man}(x) \implies \text{Mortal}(x)
 $$
+
+$$
+\text{Man}(\text{Socrates})
+$$
+
+<!-- add down arrow -->
+
+<i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+$$
+\text{Mortal}(\text{Socrates})
+$$
+
 {{% /fragment %}}
 {{% fragment class="col" %}} 
 #### Sub-symbolic models
@@ -84,3 +94,23 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 
 {{% /fragment %}}
 {{% /row %}}
+
+---
+    
+{{% slide auto-animate=true %}}
+
+### Symbolic Knowledge Extraction (SKE) {.highlight}
+
+{{< image width="50" src="/iris-flower.png" >}}
+
+$$
+\forall x \, (\text{PetalLength}(x) \leq 2.45) \implies \text{Class}(x, \text{Setosa})
+$$
+
+$$
+\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) \leq 1.75) \implies \text{Class}(x, \text{Versicolor})
+$$
+
+$$
+\forall x \, (\text{PetalLength}(x) > 2.45 \land \text{PetalWidth}(x) > 1.75) \implies \text{Class}(x, \text{Virginica})
+$$
