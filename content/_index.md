@@ -75,15 +75,15 @@ Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symb
 {{% fragment class="col" %}}
 
 #### Constraining
-{{< image height="30" src="/workflow-constraining.png" >}}
-The training process is *guided* by the loss function that incorporates the knowledge, i.e., it **penalizes** the model when it makes predictions that **violates** the knowledge.
+{{< image height="25" src="/workflow-constraining.png" >}}
+The training process is *guided* by the loss function that incorporates the knowledge **penalising** the model when it makes predictions that **violates** it.
 
 {{% /fragment %}}
 
 {{% fragment class="col" %}}
 
 #### Embedding
-{{< image height="30" src="/workflow-embedding.png" >}}
+{{< image height="25" src="/workflow-embedding.png" >}}
 The symbolic knowledge is *embedded* into a sub-symbolic representation.
 The embeddings are provided as **additional input** to the neural network.
 
@@ -93,7 +93,7 @@ The embeddings are provided as **additional input** to the neural network.
 {{% row %}}
 {{% fragment class="col" %}}
 
-{{< image width="45" src="/workflow-structuring.png" >}}
+{{< image height="25" src="/workflow-structuring.png" >}}
 
 {{% /fragment %}}
 {{% fragment class="col" %}}
@@ -115,7 +115,7 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 {{% fragment class="col" %}}
 
 #### Data
-{{< image height="30" src="/iris-dataset.svg" >}}
+{{< image height="30" src="/iris-flower.svg" >}}
 The well known Iris dataset is used to train a neural network.
 
 {{% /fragment %}}
@@ -125,6 +125,7 @@ The well known Iris dataset is used to train a neural network.
 #### Sub-symbolic model
 {{< image height="30" src="/nn-iris.png" >}}
 A neural network is trained to classify the Iris dataset.
+A human **can't understand** how the network makes decisions by inspecting the weights.
 
 {{% /fragment %}}
 
@@ -132,6 +133,7 @@ A neural network is trained to classify the Iris dataset.
 #### Symbolic knowledge
 {{< image height="30" src="/decision-tree-iris.png" >}}
 A decision tree is generated from the neural network to extract symbolic knowledge.
+The decision tree is **interpretable** by humans.
 
 {{% /fragment %}}
 {{% /row %}}
