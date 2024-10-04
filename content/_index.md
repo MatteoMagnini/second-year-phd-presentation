@@ -60,7 +60,7 @@ $$
 {{% fragment class="col" %}}
 
 #### Constraining
-{{< image width="30%" src="/workflow-constraining.svg" >}}
+{{< image width="50" src="/workflow-constraining.svg" >}}
 
 The training process is guided by a loss function that incorporates symbolic knowledge.
 
@@ -71,7 +71,7 @@ Intuitively, the loss function penalizes the model when it makes predictions tha
 {{% fragment class="col" %}}
 
 #### Embedding
-{{< image width="30%" src="/workflow-embedding.svg" >}}
+{{< image width="50" src="/workflow-embedding.svg" >}}
 
 The symbolic knowledge is embedded into a sub-symbolic representation.
 
@@ -82,7 +82,7 @@ The embeddings are provided as additional input to the neural network.
 {{% fragment class="col" %}}
 
 #### Structuring
-{{< image width="30%" src="/workflow-structuring.svg" >}}
+{{< image width="50" src="/workflow-structuring.svg" >}}
 
 The network architecture is modified to include symbolic knowledge.
 
