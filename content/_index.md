@@ -137,3 +137,94 @@ The decision tree is **interpretable** by humans.
 
 {{% /fragment %}}
 {{% /row %}}
+
+---
+
+{{% slide auto-animate=true %}}
+### Current literature limitations {.highlight}
+
+{{% row %}}
+
+{{% fragment class="col" %}}
+
+{{% /fragment %}}
+{{% /row %}}
+
+---
+
+{{% slide auto-animate=true %}}
+### Proposed approach {.highlight}
+
+{{% row %}}
+
+{{% fragment class="col" %}}
+
+{{% /fragment %}}
+{{% /row %}}
+
+---
+
+{{% slide auto-animate=true %}}
+## Contributions {.highlight}
+### Paper and tools I {.accent}
+
+{{% row %}}
+{{% fragment class="col" %}}
+
+#### PSyKI
+
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+
+#### Structuring method
+
+{{% /fragment %}}
+{{% /row %}}
+
+{{% row %}}
+{{% fragment class="col" %}}
+
+#### Constraining method
+
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+
+#### QoS
+
+{{% /fragment %}}
+{{% /row %}}
+
+---
+
+### Paper and tools II {.accent}
+
+{{% row %}}
+{{% fragment class="col" %}}
+
+#### SKE in recommendation systems
+
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+
+#### Communication between intelligent agents
+
+{{% /fragment %}}
+{{% /row %}}
+
+{{% row %}}
+{{% fragment class="col" %}}
+
+#### Systematic Literature Review
+
+{{% /fragment %}}
+
+{{% fragment class="col" %}}
+
+#### SKI for fair AI
+
+{{% /fragment %}}
+{{% /row %}}
+
