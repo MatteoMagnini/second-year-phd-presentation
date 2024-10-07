@@ -141,72 +141,77 @@ The decision tree is **interpretable** by humans.
 ---
 
 {{% slide auto-animate=true %}}
-## Context {.highlight}
-### Current literature limitations {.accent}
+## Current literature limitations {.highlight}
 
-#### Technology {.highlight}
-  - the vast majority of the literature articles *lack the implementation* of the proposed methods.
-  - the ones that do, only have the code to run the experiments (if still available and maintained).
-  - only a handful of works provide a library to use the proposed method. 
+#### Technology {.accent}
+- the vast majority of the literature articles *lack the implementation* of the proposed methods.
+- the ones that do, only have the code to run the experiments (if still available and maintained).
+- only a handful of works provide a library to use the proposed method. 
 
-#### Methodology {.highlight}
-  - SKI (resp. SKE) methods primarily focus in achieving *better performance* for the educated (resp. surrogate) model.
-  - There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service (QoS)*.
-  - SKI can be used for other purposes rather than improving the model performance, like ensuring *fairness* quality.
+#### Methodology {.accent}
+- SKI (resp. SKE) methods primarily focus in achieving *better performance* for the educated (resp. surrogate) model.
+- There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service (QoS)*.
+- SKI can be used for other purposes rather than improving the model performance, like ensuring *fairness* quality.
 
-#### Vision {.highlight}
-  - SKI and SKE methods are virtually used only to solve *toy-problems* to validate the approach.
-  - The potential of these methods in *real-world applications* is not explored.
-  - Also, the *conjunct* use of SKI and SKE is not explored.
+#### Vision {.accent}
+- SKI and SKE methods are virtually used only to solve *toy-problems* to validate the approach.
+- The potential of these methods in *real-world applications* is not explored.
+- Also, the *conjunct* use of SKI and SKE is not explored.
 
 ---
 
 {{% slide auto-animate=true %}}
-## Context {.highlight}
-### Proposed approach {.accent}
+## Proposed approach {.highlight}
 
-#### Roadmap {.highlight}
-  - study the current literature to understand the state-of-the-art in SKI and SKE.
-  - design tools to support the implementations of new and already existing SKI and SKE methods.
-  - formalise QoS metrics for SKI and SKE methods.
+#### Roadmap {.accent}
+- study the current literature to understand the state-of-the-art in SKI and SKE.
+- design tools to support the implementations of new and already existing SKI and SKE methods.
+- formalise QoS metrics for SKI and SKE methods.
 
-#### Intelligent Systems branch {.highlight}
-  - design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.
+#### Intelligent Systems branch {.accent}
+- design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.
 
-#### Fairness branch {.highlight}
-  - explore the use of SKI methods to ensure fairness in AI systems.
-  - design a specific language to express fairness constraints.
+#### Fairness branch {.accent}
+- explore the use of SKI methods to ensure fairness in AI systems.
+- design a specific language to express fairness constraints.
 
 ---
 
 {{% slide auto-animate=true %}}
 ## Contributions {.highlight}
-### Paper and tools I {.accent}
 
 {{% row %}}
 {{% fragment class="col" %}}
 
-#### PSyKI
-
+#### Systematic Literature Review {.accent}
+- "G. Ciatto et al., *Symbolic Knowledge Extraction and Injection with Subsymbolic Predictors: A Systematic Literature Review*, in journal {{% good c="ACM Computing Surveys 2024" %}}"
 {{% /fragment %}}
 
 {{% fragment class="col" %}}
 
-#### Structuring method
+#### Technologies {.accent}
+- "M. Magnini et al., *On the Design of PSyKI: A Platform for Symbolic Knowledge Injection into Sub-symbolic Predictors*, in workshop {{% good c="EXTRAAMAS 2022" %}}", publicly available at [github.com/psykei/psyki-python](https://github.com/psykei/psyki-python)
+- PSyKE, implementation only, publicly available at [github.com/psykei/psyki-python](https://github.com/psykei/psyke-python)
 
 {{% /fragment %}}
 {{% /row %}}
 
 {{% row %}}
+
 {{% fragment class="col" %}}
 
-#### Constraining method
+#### SKI methods {.accent}
+- "M. Magnini et al., *KINS: Knowledge Injection via Network Structuring*, in workshop {{% good c="CILC 2022" %}}"
+- "M. Magnini et al., *Knowledge injection of Datalog rules via Neural Network Structuring with KINS*, in journal {{% good c="Logic and Computation 2023" %}}"
+- "M. Magnini et al., *A view to a KILL: knowledge injection via lambda layer*, in workshop {{% good c="WOA 2022" %}}"
 
 {{% /fragment %}}
 
 {{% fragment class="col" %}}
 
-#### Quality of Service
+#### Quality of Service {.accent}
+- "A. Agiollo et al., *Symbolic knowledge injection meets intelligent agents: QoS metrics and experiments*, in journal {{% good c="Autonomous Agents and Multi-Agent Systems 2023" %}}"
+- "A. Rafanelli et al., *An Empirical Study on the Robustness of Knowledge Injection Techniques Against Data Degradation*, in workshop {{% good c="WOA 2024" %}}"
 
 {{% /fragment %}}
 {{% /row %}}
