@@ -143,20 +143,32 @@ The decision tree is **interpretable** by humans.
 {{% slide auto-animate=true %}}
 ## Current literature limitations {.highlight}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Technology {.accent}
-- the vast majority of the literature articles *lack the implementation* of the proposed methods.
-- the ones that do, only have the code to run the experiments (if still available and maintained).
-- only a handful of works provide a library to use the proposed method. 
+- The vast majority of the literature articles *lack the implementation* of the proposed methods.
+- The ones that do, only have the code to run the experiments (if still available and maintained).
+- Only a handful of works provide a library to use the proposed method. 
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Methodology {.accent}
 - SKI (resp. SKE) methods primarily focus in achieving *better performance* for the educated (resp. surrogate) model.
 - There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service (QoS)*.
 - SKI can be used for other purposes rather than improving the model performance, like ensuring *fairness* quality.
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Vision {.accent}
 - SKI and SKE methods are virtually used only to solve *toy-problems* to validate the approach.
 - The potential of these methods in *real-world applications* is not explored.
 - Also, the *conjunct* use of SKI and SKE is not explored.
+{{% /fragment %}}
+{{% /row %}}
 
 ---
 
@@ -166,24 +178,24 @@ The decision tree is **interpretable** by humans.
 {{% row %}}
 {{% fragment class="col" %}}
 #### Roadmap {.accent}
-- study the current literature to understand the state-of-the-art in SKI and SKE.
-- design tools to support the implementations of new and already existing SKI and SKE methods.
-- formalise QoS metrics for SKI and SKE methods.
+- Study the current literature to understand the state-of-the-art in SKI and SKE.
+- Design tools to support the implementations of new and already existing SKI and SKE methods.
+- Formalise QoS metrics for SKI and SKE methods.
 {{% /fragment %}}
 {{% /row %}}
 
 {{% row %}}
 {{% fragment class="col" %}}
 #### Intelligent Systems branch {.accent}
-- design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.
+- Design and implement intelligent systems that make use of SKI and SKE methods for real-world applications.
 {{% /fragment %}}
 {{% /row %}}
 
 {{% row %}}
 {{% fragment class="col" %}}
 #### Fairness branch {.accent}
-- explore the use of SKI methods to ensure fairness in AI systems.
-- design a specific language to express fairness constraints.
+- Explore the use of SKI methods to ensure fairness in AI systems.
+- Design a specific language to express fairness constraints.
 {{% /fragment %}}
 {{% /row %}}
 
@@ -285,8 +297,8 @@ From the answers, a symbolic representation can be generated.
 #### SKI with LLM {.accent}
 Conversely, LLMs can operate by **exploiting external (symbolic) knowledge** like textual documents, ontologies, databases, etc.
 This knowledge can be provided with two different strategies:
-- *fine-tuning*: similar to the traditional fine-tuning process, re-training the LLM with the new data. 
-- *retrieval-augmented generation (RAG)*: retrieval mechanism to get relevant information from the external knowledge and then generation phase.
+- *Fine-tuning*: similar to the traditional fine-tuning process, re-training the LLM with the new data. 
+- *Retrieval-augmented generation (RAG)*: retrieval mechanism to get relevant information from the external knowledge and then generation phase.
 {{% /fragment %}}
 {{% /row %}}
 
@@ -307,8 +319,9 @@ This knowledge can be provided with two different strategies:
 
 {{% row %}}
 {{% fragment class="col" %}}
-- *reliability* of SKI/SKE systems and LLMs. E.g., extracted/injected knowledge is sound? Are there hallucinations? etc. 
-- *fairness*, are there bias in the LLMs? If positive, how to mitigate it?
-- *real-world applications*, explore new tasks where SKI/SKE and LLMs (possibly with multiple roles) can be used.
+- *Reliability* of SKI/SKE systems and LLMs. E.g., extracted/injected knowledge is sound? Are there hallucinations? etc. 
+- *Fairness*, are there bias in the LLMs? If positive, how to mitigate it?
+- *Closing the loop* between SKI and SKE, how to use the extracted knowledge to improve the injected one continuously?
+- *Real-world applications*, explore new tasks where SKI/SKE and LLMs (possibly with multiple roles) can be used.
 {{% /fragment %}}
 {{% /row %}}
