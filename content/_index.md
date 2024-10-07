@@ -249,4 +249,25 @@ The decision tree is **interpretable** by humans.
 ---
 
 {{% slide auto-animate=true %}}
-## And then LLM happened {.highlight}
+## And then LLMs happened {.highlight}
+
+#### Large Language Models {.accent}
+LLMs are huge neural networks (up to hundreds of billions of parameters) that are trained on a large corpus of text data.
+Generally, LLMs work by **predicting the most plausible token** given the previous tokens in a sentence.
+In the last years, the success of LLM has been world-wide recognised, and they are successfully used in applications of different domains.
+
+#### SKE with LLM {.accent}
+LLMs can be exploited to **extract** symbolic knowledge about a particular domain of interest.
+The process can be done by iteratively querying the LLM with a set of questions following a specific protocol.
+From the answers, a symbolic representation can be generated.
+
+#### SKI with LLM {.accent}
+Conversely, LLMs can operate by exploiting external symbolic knowledge like textual documents, ontologies, databases, etc.
+This knowledge can be provided with two different strategies:
+- *fine-tuning*: similar to the traditional fine-tuning process, re-training the LLM with the new data. 
+- *retrieval-augmented generation (RAG)*: retrieval mechanism to get relevant information from the external knowledge and then generation phase.
+
+---
+
+{{% slide auto-animate=true %}}
+## Contributions {.highlight}
