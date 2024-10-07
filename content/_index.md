@@ -144,17 +144,17 @@ The decision tree is **interpretable** by humans.
 ## Context {.highlight}
 ### Current literature limitations {.accent}
 
-- **Technology**:
+#### Technology {.highlight}
   - the vast majority of the literature articles *lack the implementation* of the proposed methods.
-  - the ones that do, only have the code to run the *experiments* (if still available and maintained).
-  - only a handful of works provide a *library* to use the proposed method. 
+  - the ones that do, only have the code to run the experiments (if still available and maintained).
+  - only a handful of works provide a library to use the proposed method. 
 
-- **Scope**:
+#### Methodology {.highlight}
   - SKI (resp. SKE) methods primarily focus in achieving *better performance* for the educated (resp. surrogate) model.
-  - There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service*.
+  - There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service (QoS)*.
   - SKI can be used for other purposes rather than improving the model performance, like ensuring *fairness* quality.
 
-- **Vision**:
+#### Vision {.highlight}
   - SKI and SKE methods are virtually used only to solve *toy-problems* to validate the approach.
   - The potential of these methods in *real-world applications* is not explored.
   - Also, the *conjunct* use of SKI and SKE is not explored.
@@ -165,6 +165,17 @@ The decision tree is **interpretable** by humans.
 ## Context {.highlight}
 ### Proposed approach {.accent}
 
+#### Roadmap {.highlight}
+  - study the current literature to understand the state-of-the-art in SKI and SKE.
+  - design tools to support the implementations of new and already existing SKI and SKE methods.
+  - formalise QoS metrics for SKI and SKE methods.
+
+#### Intelligent Systems branch {.highlight}
+  - design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.
+
+#### Fairness branch {.highlight}
+  - explore the use of SKI methods to ensure fairness in AI systems.
+  - design a specific language to express fairness constraints.
 
 ---
 
