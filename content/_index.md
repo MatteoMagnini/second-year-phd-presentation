@@ -67,8 +67,8 @@ Intelligent systems incorporate knowledge, possibly **both symbolic and sub-symb
 ---
 
 {{% slide auto-animate=true %}}
-
-### Symbolic Knowledge Injection (SKI) {.highlight}
+## Context {.highlight}
+### Symbolic Knowledge Injection (SKI) {.accent}
 
 {{% row %}}
 
@@ -107,8 +107,8 @@ Some neurons and connection are designed to **mimic** the symbolic knowledge.
 ---
     
 {{% slide auto-animate=true %}}
-
-### Symbolic Knowledge Extraction (SKE) {.highlight}
+## Context {.highlight}
+### Symbolic Knowledge Extraction (SKE) {.accent}
 
 {{% row %}}
 
@@ -141,26 +141,30 @@ The decision tree is **interpretable** by humans.
 ---
 
 {{% slide auto-animate=true %}}
-### Current literature limitations {.highlight}
+## Context {.highlight}
+### Current literature limitations {.accent}
 
-{{% row %}}
+- **Technology**:
+  - the vast majority of the literature articles *lack the implementation* of the proposed methods.
+  - the ones that do, only have the code to run the *experiments* (if still available and maintained).
+  - only a handful of works provide a *library* to use the proposed method. 
 
-{{% fragment class="col" %}}
+- **Scope**:
+  - SKI (resp. SKE) methods primarily focus in achieving *better performance* for the educated (resp. surrogate) model.
+  - There is a lack of works that explore qualitative aspects of the model, a.k.a. *Quality of Service*.
+  - SKI can be used for other purposes rather than improving the model performance, like ensuring *fairness* quality.
 
-{{% /fragment %}}
-{{% /row %}}
+- **Vision**:
+  - SKI and SKE methods are virtually used only to solve *toy-problems* to validate the approach.
+  - The potential of these methods in *real-world applications* is not explored.
+  - Also, the *conjunct* use of SKI and SKE is not explored.
 
 ---
 
 {{% slide auto-animate=true %}}
-### Proposed approach {.highlight}
+## Context {.highlight}
+### Proposed approach {.accent}
 
-{{% row %}}
-
-{{% fragment class="col" %}}
-
-{{% /fragment %}}
-{{% /row %}}
 
 ---
 
@@ -191,7 +195,7 @@ The decision tree is **interpretable** by humans.
 
 {{% fragment class="col" %}}
 
-#### QoS
+#### Quality of Service
 
 {{% /fragment %}}
 {{% /row %}}
@@ -228,3 +232,7 @@ The decision tree is **interpretable** by humans.
 {{% /fragment %}}
 {{% /row %}}
 
+---
+
+{{% slide auto-animate=true %}}
+## And then LLM happened {.highlight}
