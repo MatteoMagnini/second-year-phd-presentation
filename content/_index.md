@@ -218,34 +218,32 @@ The decision tree is **interpretable** by humans.
 
 ---
 
-### Paper and tools II {.accent}
+## Contributions {.highlight}
 
 {{% row %}}
 {{% fragment class="col" %}}
 
-#### SKE in recommendation systems
-
-{{% /fragment %}}
-
-{{% fragment class="col" %}}
-
-#### Communication between intelligent agents
-
+#### Intelligent systems {.accent}
+- "M. Magnini et al., *Symbolic knowledge extraction for explainable nutritional recommenders*, in journal {{% good c="Computer Methods and Programs in Biomedicine 2023" %}}"
+- "G. Ciatto et al., *A General-Purpose Protocol for Multi-agent Based Explanations*, in workshop {{% good c="EXTRAAMAS 2023" %}}"
 {{% /fragment %}}
 {{% /row %}}
 
 {{% row %}}
 {{% fragment class="col" %}}
 
-#### Systematic Literature Review
-
+#### SKI and SKE conjunct {.accent}
+- "M. Magnini et al., *Bridging Symbolic and Sub-Symbolic AI: Towards Cooperative Transfer Learning in Multi-Agent Systems*" in workshop {{% good c="AIxIA DP 2022" %}}
 {{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
 {{% fragment class="col" %}}
 
-#### SKI for fair AI
-
+#### Fairness {.accent}
+- "M. Magnini et al., *Enforcing Fairness via Constraint Injection with FaUCI*, in workshop {{% good c="AEQUITAS 2024" %}}"
 {{% /fragment %}}
+
 {{% /row %}}
 
 ---
