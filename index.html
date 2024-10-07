@@ -134,24 +134,36 @@ The decision tree is <strong>interpretable</strong> by humans.</p>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h2 class="highlight" id="current-literature-limitations">Current literature limitations</h2>
-<h4 class="accent" id="technology">Technology</h4>
+<div class="container">
+<span class="fragment col">
+  <h4 class="accent" id="technology">Technology</h4>
 <ul>
-<li>the vast majority of the literature articles <em>lack the implementation</em> of the proposed methods.</li>
-<li>the ones that do, only have the code to run the experiments (if still available and maintained).</li>
-<li>only a handful of works provide a library to use the proposed method.</li>
+<li>The vast majority of the literature articles <em>lack the implementation</em> of the proposed methods.</li>
+<li>The ones that do, only have the code to run the experiments (if still available and maintained).</li>
+<li>Only a handful of works provide a library to use the proposed method.</li>
 </ul>
-<h4 class="accent" id="methodology">Methodology</h4>
+</span>
+</div>
+<div class="container">
+<span class="fragment col">
+  <h4 class="accent" id="methodology">Methodology</h4>
 <ul>
 <li>SKI (resp. SKE) methods primarily focus in achieving <em>better performance</em> for the educated (resp. surrogate) model.</li>
 <li>There is a lack of works that explore qualitative aspects of the model, a.k.a. <em>Quality of Service (QoS)</em>.</li>
 <li>SKI can be used for other purposes rather than improving the model performance, like ensuring <em>fairness</em> quality.</li>
 </ul>
-<h4 class="accent" id="vision">Vision</h4>
+</span>
+</div>
+<div class="container">
+<span class="fragment col">
+  <h4 class="accent" id="vision">Vision</h4>
 <ul>
 <li>SKI and SKE methods are virtually used only to solve <em>toy-problems</em> to validate the approach.</li>
 <li>The potential of these methods in <em>real-world applications</em> is not explored.</li>
 <li>Also, the <em>conjunct</em> use of SKI and SKE is not explored.</li>
 </ul>
+</span>
+</div>
 </section>
 <section data-noprocess="" data-shortcode-slide="" data-auto-animate="true">
 <h2 class="highlight" id="proposed-approach">Proposed approach</h2>
@@ -159,9 +171,9 @@ The decision tree is <strong>interpretable</strong> by humans.</p>
 <span class="fragment col">
   <h4 class="accent" id="roadmap">Roadmap</h4>
 <ul>
-<li>study the current literature to understand the state-of-the-art in SKI and SKE.</li>
-<li>design tools to support the implementations of new and already existing SKI and SKE methods.</li>
-<li>formalise QoS metrics for SKI and SKE methods.</li>
+<li>Study the current literature to understand the state-of-the-art in SKI and SKE.</li>
+<li>Design tools to support the implementations of new and already existing SKI and SKE methods.</li>
+<li>Formalise QoS metrics for SKI and SKE methods.</li>
 </ul>
 </span>
 </div>
@@ -169,7 +181,7 @@ The decision tree is <strong>interpretable</strong> by humans.</p>
 <span class="fragment col">
   <h4 class="accent" id="intelligent-systems-branch">Intelligent Systems branch</h4>
 <ul>
-<li>design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.</li>
+<li>Design and implement intelligent systems that make use of SKI and SKE methods for real-world applications.</li>
 </ul>
 </span>
 </div>
@@ -177,8 +189,8 @@ The decision tree is <strong>interpretable</strong> by humans.</p>
 <span class="fragment col">
   <h4 class="accent" id="fairness-branch">Fairness branch</h4>
 <ul>
-<li>explore the use of SKI methods to ensure fairness in AI systems.</li>
-<li>design a specific language to express fairness constraints.</li>
+<li>Explore the use of SKI methods to ensure fairness in AI systems.</li>
+<li>Design a specific language to express fairness constraints.</li>
 </ul>
 </span>
 </div>
@@ -269,8 +281,8 @@ From the answers, a symbolic representation can be generated.</p>
 <p>Conversely, LLMs can operate by <strong>exploiting external (symbolic) knowledge</strong> like textual documents, ontologies, databases, etc.
 This knowledge can be provided with two different strategies:</p>
 <ul>
-<li><em>fine-tuning</em>: similar to the traditional fine-tuning process, re-training the LLM with the new data.</li>
-<li><em>retrieval-augmented generation (RAG)</em>: retrieval mechanism to get relevant information from the external knowledge and then generation phase.</li>
+<li><em>Fine-tuning</em>: similar to the traditional fine-tuning process, re-training the LLM with the new data.</li>
+<li><em>Retrieval-augmented generation (RAG)</em>: retrieval mechanism to get relevant information from the external knowledge and then generation phase.</li>
 </ul>
 </span>
 </div>
@@ -290,9 +302,10 @@ This knowledge can be provided with two different strategies:</p>
 <div class="container">
 <span class="fragment col">
   <ul>
-<li><em>reliability</em> of SKI/SKE systems and LLMs. E.g., extracted/injected knowledge is sound? Are there hallucinations? etc.</li>
-<li><em>fairness</em>, are there bias in the LLMs? If positive, how to mitigate it?</li>
-<li><em>real-world applications</em>, explore new tasks where SKI/SKE and LLMs (possibly with multiple roles) can be used.</li>
+<li><em>Reliability</em> of SKI/SKE systems and LLMs. E.g., extracted/injected knowledge is sound? Are there hallucinations? etc.</li>
+<li><em>Fairness</em>, are there bias in the LLMs? If positive, how to mitigate it?</li>
+<li><em>Closing the loop</em> between SKI and SKE, how to use the extracted knowledge to improve the injected one continuously?</li>
+<li><em>Real-world applications</em>, explore new tasks where SKI/SKE and LLMs (possibly with multiple roles) can be used.</li>
 </ul>
 </span>
 </div></section>
