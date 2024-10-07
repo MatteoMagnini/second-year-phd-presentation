@@ -163,17 +163,29 @@ The decision tree is **interpretable** by humans.
 {{% slide auto-animate=true %}}
 ## Proposed approach {.highlight}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Roadmap {.accent}
 - study the current literature to understand the state-of-the-art in SKI and SKE.
 - design tools to support the implementations of new and already existing SKI and SKE methods.
 - formalise QoS metrics for SKI and SKE methods.
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Intelligent Systems branch {.accent}
 - design and implement intelligent systems that make use of SKI and SKE methods in real-world applications.
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### Fairness branch {.accent}
 - explore the use of SKI methods to ensure fairness in AI systems.
 - design a specific language to express fairness constraints.
+{{% /fragment %}}
+{{% /row %}}
 
 ---
 
@@ -250,24 +262,53 @@ The decision tree is **interpretable** by humans.
 
 {{% slide auto-animate=true %}}
 ## And then LLMs happened {.highlight}
-
+{{% row %}}
+{{% fragment class="col" %}}
 #### Large Language Models {.accent}
 LLMs are huge neural networks (up to hundreds of billions of parameters) that are trained on a large corpus of text data.
 Generally, LLMs work by **predicting the most plausible token** given the previous tokens in a sentence.
 In the last years, the success of LLM has been world-wide recognised, and they are successfully used in applications of different domains.
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### SKE with LLM {.accent}
 LLMs can be exploited to **extract** symbolic knowledge about a particular domain of interest.
 The process can be done by iteratively querying the LLM with a set of questions following a specific protocol.
 From the answers, a symbolic representation can be generated.
+{{% /fragment %}}
+{{% /row %}}
 
+{{% row %}}
+{{% fragment class="col" %}}
 #### SKI with LLM {.accent}
-Conversely, LLMs can operate by exploiting external symbolic knowledge like textual documents, ontologies, databases, etc.
+Conversely, LLMs can operate by **exploiting external (symbolic) knowledge** like textual documents, ontologies, databases, etc.
 This knowledge can be provided with two different strategies:
 - *fine-tuning*: similar to the traditional fine-tuning process, re-training the LLM with the new data. 
 - *retrieval-augmented generation (RAG)*: retrieval mechanism to get relevant information from the external knowledge and then generation phase.
+{{% /fragment %}}
+{{% /row %}}
 
 ---
 
 {{% slide auto-animate=true %}}
 ## Contributions {.highlight}
+
+{{% row %}}
+{{% fragment class="col" %}}
+#### Applications, SKI and SKE with LLMs {.accent}
+- "M. Magnini et al., *Actively Learning Ontologies from LLMs: First Results (Extended Abstract)*, in workshop {{% good c="DL 2024" %}}"
+- "S. Montagna et al., *LLM-based Solutions for Healthcare Chatbots: a Comparative Analysis*, in workshop {{% good c="PERCOM 2024" %}}"
+{{% /fragment %}}
+{{% /row %}}
+
+## Challenges and Future work {.highlight}
+
+{{% row %}}
+{{% fragment class="col" %}}
+- *reliability* of SKI/SKE systems and LLMs. E.g., extracted/injected knowledge is sound? Are there hallucinations? etc. 
+- *fairness*, are there bias in the LLMs? If positive, how to mitigate it?
+- *real-world applications*, explore new tasks where SKI/SKE and LLMs (possibly with multiple roles) can be used.
+{{% /fragment %}}
+{{% /row %}}
